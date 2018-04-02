@@ -9,7 +9,7 @@ namespace $safeprojectname$
     {
         private readonly ILogger _logger;
 
-        public PluginMain(IDependencyContainer container, ILogger logger) : base(container)
+        public $safeprojectname$Main(IDependencyContainer container, ILogger logger) : base(container)
         {
             _logger = logger;
         }

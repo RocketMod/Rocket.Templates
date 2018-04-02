@@ -17,6 +17,7 @@
     <Project ReplaceParameters="true" TargetFileName="$projectname$.csproj" File="ProjectTemplate.csproj">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Main.cs" OpenInEditor="true">PluginMain.cs</ProjectItem>
+	  <ProjectItem>packages.config</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

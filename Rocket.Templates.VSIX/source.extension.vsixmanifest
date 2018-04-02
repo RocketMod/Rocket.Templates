@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Rocket.Templates.VSIX.3e3675ed-0882-4b85-b106-510f7ad0b0f6" Version="1.2" Language="en-US" Publisher="Trojaner" />
+        <Identity Id="Rocket.Templates.VSIX.3e3675ed-0882-4b85-b106-510f7ad0b0f6" Version="1.4" Language="en-US" Publisher="Trojaner" />
         <DisplayName>Rocket.Templates</DisplayName>
         <Description xml:space="preserve">This extension installs various Rocket API Layer templates.</Description>
         <MoreInfo>https://github.com/RocketMod/Rocket.Templates</MoreInfo>
