@@ -3,9 +3,9 @@ using Rocket.API.DependencyInjection;
 using Rocket.API.Logging;
 using Rocket.Core.Plugins;
 
-namespace $rootnamespace$
+namespace $safeprojectname$
 {
-    public class $safeprojectname$Plugin : PluginBase
+    public class $safeprojectname$Main : PluginBase
     {
         private readonly ILogger _logger;
 
@@ -21,7 +21,7 @@ namespace $rootnamespace$
 
         public override void Unload()
         {
-            
+
         }
 
         public override IEnumerable<string> Capabilities => new List<string>();

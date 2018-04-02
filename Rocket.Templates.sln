@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Templates.Universal", "Rocket.Templates.Universal\Rocket.Templates.Universal.csproj", "{18B26C8F-9F37-4541-9DCA-8F2203C48792}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Templates.VSIX", "Rocket.Templates.VSIX\Rocket.Templates.VSIX.csproj", "{04F84F08-F985-4C12-826B-65A30829D55A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Templates.Universal", "Rocket.Templates.Universal\Rocket.Templates.Universal.csproj", "{31EEA427-2A5D-4563-BF61-51B5FF35F6AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18B26C8F-9F37-4541-9DCA-8F2203C48792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18B26C8F-9F37-4541-9DCA-8F2203C48792}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18B26C8F-9F37-4541-9DCA-8F2203C48792}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18B26C8F-9F37-4541-9DCA-8F2203C48792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F84F08-F985-4C12-826B-65A30829D55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F84F08-F985-4C12-826B-65A30829D55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F84F08-F985-4C12-826B-65A30829D55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F84F08-F985-4C12-826B-65A30829D55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31EEA427-2A5D-4563-BF61-51B5FF35F6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EEA427-2A5D-4563-BF61-51B5FF35F6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

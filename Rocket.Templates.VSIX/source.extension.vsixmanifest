@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Rocket.Templates.VSIX.3e3675ed-0882-4b85-b106-510f7ad0b0f6" Version="1.2" Language="en-US" Publisher="Trojaner" />
+        <DisplayName>Rocket.Templates</DisplayName>
+        <Description xml:space="preserve">This extension installs various Rocket API Layer templates.</Description>
+        <MoreInfo>https://github.com/RocketMod/Rocket.Templates</MoreInfo>
+        <License>LICENSE.txt</License>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[12.0,]" />
+        <InstallationTarget Version="[11.0,)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[11.0,)" Id="Microsoft.VisualStudio.Enterprise" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.0,)" />
+        <Dependency d:Source="Installed" Id="NuGet.72c5d240-f742-48d4-a0f1-7016671e405b" DisplayName="NuGet-Paket-Manager" Version="[15.0.40601.5019,16.0)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Rocket.Templates.Universal.zip" />
+        <Asset d:Source="File" Type="Rocket.API.5.0.0.133.nupkg" Path="Packages\Rocket.API.5.0.0.133.nupkg" d:VsixSubPath="Packages" />
+        <Asset d:Source="File" Type="Rocket.Compability.5.0.0.133.nupkg" Path="Packages\Rocket.Compability.5.0.0.133.nupkg" d:VsixSubPath="Packages" />
+        <Asset d:Source="File" Type="Rocket.Core.5.0.0.133.nupkg" Path="Packages\Rocket.Core.5.0.0.133.nupkg" d:VsixSubPath="Packages" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

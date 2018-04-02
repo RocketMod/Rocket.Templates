@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Rocket.Templates.Universal")]
+[assembly: AssemblyTitle("Rocket.Templates.VSIX")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Enes Özbek")]
-[assembly: AssemblyProduct("Rocket.Templates.Universal")]
-[assembly: AssemblyCopyright("Copyright © Enes Özbek 2018")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Rocket.Templates.VSIX")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -18,9 +18,6 @@ using System.Runtime.InteropServices;
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("31eea427-2a5d-4563-bf61-51b5ff35f6aa")]
 
 // Version information for an assembly consists of the following four values:
 //
