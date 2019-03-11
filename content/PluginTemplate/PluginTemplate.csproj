@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MyRocketPlugin</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateNugetPackage>true</GenerateNugetPackage>
+    <DefineConstants>$(DefineConstants);Commands;Configuration</DefineConstants>
+	<Product>PLUGIN-NAME-XML</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands - Copy\**" />
+    <EmbeddedResource Remove="Commands - Copy\**" />
+    <None Remove="Commands - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rocket.Core" Version="5.0.0.647" />
+  </ItemGroup>
+
+</Project>
