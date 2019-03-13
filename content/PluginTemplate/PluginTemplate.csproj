@@ -10,13 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Commands - Copy\**" />
-    <EmbeddedResource Remove="Commands - Copy\**" />
-    <None Remove="Commands - Copy\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Rocket.Core" Version="5.0.0.647" />
+    <PackageReference Include="Rocket.Core" Version="5.0.0.649" />
   </ItemGroup>
 
 </Project>

@@ -39,7 +39,7 @@ namespace MyRocketPlugin
 
 #if Commands
             var commandsCollection = new CommandsCollection(_userManager);
-            RegisterCommandsFromObject(commandsCollection);
+            RegisterCommands(commandsCollection);
 #endif
 
 #if Configuration
