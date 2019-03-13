@@ -24,8 +24,10 @@
   ],
   "symbols": {
     "PluginName": {
-      "type": "derived",
-      "valueSource": "Name",
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Sets the name of the plugin",
+      "defaultValue": "My RocketMod Plugin",
       "replaces": "PLUGIN-NAME"
     },
     "PluginNameXmlEncoded": {
