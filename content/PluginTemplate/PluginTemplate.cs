@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Globalization;
 using System.Threading.Tasks;
-#if Commands
+#if GenerateCommands
 using MyRocketPlugin.Commands;
 #endif
-#if Configuration
+#if GenerateConfiguration
 using MyRocketPlugin.Configuration;
 #endif
 using Rocket.API.DependencyInjection;
