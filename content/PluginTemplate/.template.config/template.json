@@ -23,17 +23,17 @@
     }
   ],
   "symbols": {
-    "PluginName": {
+    "FullPluginName": {
       "type": "parameter",
       "datatype": "string",
       "description": "Sets the name of the plugin",
       "defaultValue": "My RocketMod Plugin",
       "replaces": "PLUGIN-NAME"
     },
-    "PluginNameXmlEncoded": {
+    "FullPluginNameXmlEncoded": {
       "type": "derived",
       "replaces": "PLUGIN-NAME-XML",
-      "valueSource": "PluginName",
+      "valueSource": "FullPluginName",
       "valueTransform": "xmlEncode"
     },
     "SkipRestore": {
