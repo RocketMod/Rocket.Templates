@@ -2,14 +2,14 @@
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
 		<PackageId>Rocket.Templates</PackageId>
-		<Title>RocketMod Plugin Templates</Title>
-		<Authors>Enes Sadik Özbek</Authors>
-		<Description>RocketMod templates for "dotnet new".</Description>
-		<Tags>RocketMod;dotnet-new;templates</Tags>
         <PackageLicenseUrl>https://github.com/RocketMod/Rocket.Templates/blob/master/LICENSE</PackageLicenseUrl>
         <PackageProjectUrl>https://rocketmod.net/</PackageProjectUrl>
 	    <PackageAuthors>Enes Sadık Özbek &lt;esozbek.me&gt;</PackageAuthors>
         <PackageOwners>Sven Mawby&lt;fr34kyn01535@bam.yt&gt;</PackageOwners>
+		<PackageType>Template</PackageType>
+		<Title>RocketMod Plugin Templates</Title>
+		<Description>RocketMod templates for "dotnet new".</Description>
+		<Tags>RocketMod;dotnet-new;templates</Tags>
         <Authors>Enes Sadık Özbek &lt;esozbek.me&gt;</Authors>
         <Company>RocketMod</Company>
 		<IncludeContentInPack>true</IncludeContentInPack>

@@ -4,7 +4,7 @@
   "classifications": [
     "Common",
     "RocketMod",
-	"Plugin"
+    "Plugin"
   ],
   "name": "RocketMod Plugin",
   "groupIdentity": "RocketMod.Plugin",
@@ -15,9 +15,7 @@
     "type": "project"
   },
   "sourceName": "PluginTemplate",
-  "guids": [
-    
-  ],
+  "guids": [],
   "preferNameDirectory": true,
   "PrimaryOutputs": [
     {
@@ -26,54 +24,64 @@
   ],
   "symbols": {
     "PluginName": {
-      "type": "parameter",
-      "datatype": "string",
-      "defaultValue": "My Rocket Plugin",
-      "replaces": "PLUGIN-NAME",
-      "description": "The name of the plugin."
+      "type": "derived",
+      "valueSource": "Name",
+      "replaces": "PLUGIN-NAME"
     },
     "PluginNameXmlEncoded": {
       "type": "derived",
       "replaces": "PLUGIN-NAME-XML",
       "valueSource": "PluginName",
       "valueTransform": "xmlEncode"
-    },	
+    },
     "SkipRestore": {
       "type": "parameter",
       "datatype": "bool",
       "description": "Skips the execution of 'dotnet restore' on project creation.",
       "defaultValue": "false"
     },
-    "Commands": {
+    "GenerateCommands": {
       "type": "parameter",
       "datatype": "bool",
       "defaultValue": "true",
       "description": "Includes example commands."
-    },    
-	"Configuration": {
+    },
+    "GenerateConfiguration": {
       "type": "parameter",
       "datatype": "bool",
       "defaultValue": "true",
       "description": "Includes example configuration."
     },
+    "AddUnturned": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Adds Unturned support."
+    },
+    "AddEco": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Adds Eco support."
+    }
   },
   "sources": [
     {
       "modifiers": [
         {
-          "condition": "(!Commands)",
+          "condition": "(!GenerateCommands)",
           "exclude": [
             "Commands/**/*"
           ]
         },
-		{
-          "condition": "(!Configuration)",
+        {
+          "condition": "(!GenerateConfiguration)",
           "exclude": [
             "Configuration/**/*"
           ]
         }
-      ]	  
-	}
+      ]
+    }
   ],
   "postActions": [
     {
@@ -82,7 +90,9 @@
       "continueOnError": true,
       "description": "Restore NuGet packages required by this project.",
       "manualInstructions": [
-        { "text": "Run 'dotnet restore' in the directory the template was created in." }
+        {
+          "text": "Run 'dotnet restore' in the directory the template was created in."
+        }
       ]
     }
   ]

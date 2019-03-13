@@ -5,12 +5,14 @@
     <RootNamespace>MyRocketPlugin</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateNugetPackage>true</GenerateNugetPackage>
-    <DefineConstants>$(DefineConstants);Commands;Configuration</DefineConstants>
-	<Product>PLUGIN-NAME-XML</Product>
+    <DefineConstants>$(DefineConstants);GenerateCommands;GenerateConfiguration</DefineConstants>
+    <Product>PLUGIN-NAME-XML</Product>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Rocket.Core" Version="5.0.0.649" />
+    <PackageReference Include="Rocket.Unturned" Version="5.0.0.227" Condition="$(DefineConstants.Contains(`Unturned`))" />
+    <PackageReference Include="Rocket.Eco" Version="5.0.0.211" Condition="$(DefineConstants.Contains(`Eco`))" />
   </ItemGroup>
 
 </Project>

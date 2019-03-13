@@ -1,0 +1,20 @@
+{
+    "symbolInfo": {
+        "GenerateCommands": {
+            "longName": "GenerateCommands",
+            "shortName": "Commands"
+        },
+        "GenerateConfiguration": {
+            "longName": "GenerateConfiguration",
+            "shortName": "Configuration"
+        },
+        "AddUnturned": {
+            "longName": "AddUnturned",
+            "shortName": "unturned"
+        },
+        "AddEco": {
+            "longName": "AddEco",
+            "shortName": "eco"
+        }
+    }
+}

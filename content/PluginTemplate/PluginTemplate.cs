@@ -14,13 +14,13 @@ using Rocket.Core.Plugins;
 
 namespace MyRocketPlugin
 {
-#if Configuration
+#if GenerateConfiguration
     public class MyRocketPlugin : Plugin<MyPluginConfiguration>
 #else
     public class MyRocketPlugin : Plugin
 #endif
     {
-#if Commands
+#if GenerateCommands
         private readonly IUserManager _userManager;
 
         public MyRocketPlugin(IDependencyContainer container, IUserManager userManager) : base("PLUGIN-NAME", container)
@@ -37,12 +37,12 @@ namespace MyRocketPlugin
         {
             Logger.LogInformation("Hello World!");
 
-#if Commands
+#if GenerateCommands
             var commandsCollection = new CommandsCollection(_userManager);
             RegisterCommands(commandsCollection);
 #endif
 
-#if Configuration
+#if GenerateConfiguration
             var config = ConfigurationInstance;
             Logger.LogInformation("Last start time: " + (config.LastStartTime == null ? "None (first start)" : config.LastStartTime.Value.ToString(CultureInfo.CurrentCulture)));
 
