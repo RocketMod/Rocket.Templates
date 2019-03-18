@@ -10,8 +10,8 @@ After installing the template, you can now create a new plugin using the followi
 
 The full command is like this:
 
-`dotnet new rocket-plugin [--name <ProjectName>] [--FullPluginName <FullPluginName>] [--GenerateConfiguration <true/false>] [--GenerateCommands <true/false>] [--AddUnturned] [--AddEco]`
+`dotnet new rocket-plugin [--name <ProjectName>] [--FullPluginName <FullPluginName>] [--GenerateConfiguration <true/false>] [--GenerateCommands <true/false>] [--PluginType <Universal/Unturned/Eco>]`
 
 For example, if you want to create an Unturned plugin, you can use the following command:
 
-`dotnet new rocket-plugin --FullPluginName "My Unturned Plugin" --AddUnturned`
+`dotnet new rocket-plugin --FullPluginName "My Unturned Plugin" --PluginType Unturned`

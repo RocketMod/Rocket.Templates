@@ -10,8 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="Rocket.Core" Version="5.0.0.649" />
-    <PackageReference Include="Rocket.Unturned" Version="5.0.0.227" Condition="$(DefineConstants.Contains(`Unturned`))" />
-    <PackageReference Include="Rocket.Eco" Version="5.0.0.211" Condition="$(DefineConstants.Contains(`Eco`))" />
+    <PackageReference Include="Rocket.Unturned" Version="5.0.0.227" Condition="$(PluginType) == 'Unturned'" />
+    <PackageReference Include="Rocket.Eco" Version="5.0.0.211" Condition="$(PluginType) == 'Eco'" />
   </ItemGroup>
 
 </Project>

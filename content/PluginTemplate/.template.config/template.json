@@ -54,17 +54,25 @@
       "defaultValue": "true",
       "description": "Includes example configuration."
     },
-    "AddUnturned": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Adds Unturned support."
-    },
-    "AddEco": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "description": "Adds Eco support."
+    "PluginType": {
+      "type":"parameter",
+      "datatype": "choice",
+      "defaultValue":"Universal",
+      "choices": [
+        {
+          "choice": "Universal",
+          "description": "Universal RocketMod Plugin"
+        },
+        {
+          "choice": "Unturned",
+          "description":"Unturned RocketMod Plugin"
+        },
+        {
+          "choice":"Eco",
+          "description":"Eco RocketMod Plugin"
+        }
+      ],      
+      "description": "Defines plugin type."
     }
   },
   "sources": [

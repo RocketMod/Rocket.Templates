@@ -8,13 +8,9 @@
             "longName": "GenerateConfiguration",
             "shortName": "Configuration"
         },
-        "AddUnturned": {
-            "longName": "AddUnturned",
-            "shortName": "unturned"
-        },
-        "AddEco": {
-            "longName": "AddEco",
-            "shortName": "eco"
+        "PluginType": {
+            "longName": "PluginType",
+            "shortName": "type"
         }
     }
 }
